@@ -3,87 +3,249 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hyderabad Pan Center</title>
+    <title>Hyderabad Pan Center - Authentic Pan Experience</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <img src="new_logo.png" alt="Hyderabad Pan Center Logo" class="logo">
-            <h1>Hyderabad Pan Center</h1>
-            <h2>Authentic Pan Experience</h2>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="logo_impressive.png" alt="Hyderabad Pan Center" class="logo-img">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#varieties" class="nav-link">Our Pans</a></li>
+                <li><a href="#about" class="nav-link">About Us</a></li>
+                <li><a href="#contact" class="nav-link">Visit Us</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </div>
-    </header>
+    </nav>
 
-    <section id="pan-varieties">
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <img src="hero_background.png" alt="Background" class="hero-bg-img">
+        </div>
+        <div class="hero-content">
+            <div class="hero-logo">
+                <img src="logo_impressive.png" alt="Hyderabad Pan Center" class="hero-logo-img">
+            </div>
+            <h1 class="hero-title">Hyderabad Pan Center</h1>
+            <p class="hero-subtitle">Authentic Pan Experience</p>
+            <p class="hero-description">Where tradition meets taste in every carefully crafted pan</p>
+            <a href="#varieties" class="cta-button">Explore Our Pans</a>
+        </div>
+        <div class="hero-overlay"></div>
+    </section>
+
+    <!-- Pan Varieties Section -->
+    <section id="varieties" class="varieties">
         <div class="container">
-            <h3>Our Signature Pan Varieties</h3>
-            <div class="pan-grid">
-                <div class="pan-item">
-                    <img src="sweet_pan.webp" alt="Sweet Pan">
-                    <h4>Sweet Pan</h4>
-                    <p>A delightful blend of sweet ingredients wrapped in betel leaf</p>
+            <div class="section-header">
+                <h2 class="section-title">Our Signature Pan Varieties</h2>
+                <p class="section-subtitle">A journey through flavors, crafted with passion and tradition</p>
+            </div>
+            <div class="varieties-grid">
+                <div class="pan-card">
+                    <div class="pan-image">
+                        <img src="sweet_pan_new.png" alt="Sweet Pan" class="pan-img">
+                        <div class="pan-overlay">
+                            <span class="pan-price">₹25</span>
+                        </div>
+                    </div>
+                    <div class="pan-content">
+                        <h3 class="pan-name">Sweet Pan</h3>
+                        <p class="pan-description">A delightful blend of sweet ingredients wrapped in tender betel leaf, featuring candied fruits and aromatic fennel seeds.</p>
+                        <div class="pan-features">
+                            <span class="feature">Traditional</span>
+                            <span class="feature">Sweet</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="pan-item">
-                    <img src="chandan_pan.webp" alt="Chandan Pan">
-                    <h4>Chandan Pan</h4>
-                    <p>Aromatic sandalwood flavored pan with premium ingredients, served on a traditional golden platter</p>
+
+                <div class="pan-card">
+                    <div class="pan-image">
+                        <img src="chandan_pan_new.png" alt="Chandan Pan" class="pan-img">
+                        <div class="pan-overlay">
+                            <span class="pan-price">₹45</span>
+                        </div>
+                    </div>
+                    <div class="pan-content">
+                        <h3 class="pan-name">Chandan Pan</h3>
+                        <p class="pan-description">Aromatic sandalwood flavored pan with premium ingredients, served on a traditional golden platter for a royal experience.</p>
+                        <div class="pan-features">
+                            <span class="feature">Premium</span>
+                            <span class="feature">Aromatic</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="pan-item">
-                    <img src="meenakshi_pan.webp" alt="Meenakshi Pan">
-                    <h4>Meenakshi Pan</h4>
-                    <p>Our signature pan with a perfect blend of sweet and refreshing elements</p>
+
+                <div class="pan-card">
+                    <div class="pan-image">
+                        <img src="meenakshi_pan_new.png" alt="Meenakshi Pan" class="pan-img">
+                        <div class="pan-overlay">
+                            <span class="pan-price">₹35</span>
+                        </div>
+                    </div>
+                    <div class="pan-content">
+                        <h3 class="pan-name">Meenakshi Pan</h3>
+                        <p class="pan-description">Our signature pan with a perfect blend of sweet and refreshing elements, featuring mint, coconut, and natural honey.</p>
+                        <div class="pan-features">
+                            <span class="feature">Signature</span>
+                            <span class="feature">Refreshing</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="pan-item">
-                    <h4>Chocolate Pan</h4>
-                    <img src="chocolate_pan.webp" alt="Chocolate Pan">
-                    <p>Blissful Byte - A delightful creation featuring premium chocolate, crunchy pearls, and sweet cherries on top</p>
+
+                <div class="pan-card">
+                    <div class="pan-image">
+                        <img src="chocolate_pan_new.png" alt="Chocolate Pan" class="pan-img">
+                        <div class="pan-overlay">
+                            <span class="pan-price">₹50</span>
+                        </div>
+                    </div>
+                    <div class="pan-content">
+                        <h3 class="pan-name">Chocolate Pan</h3>
+                        <p class="pan-description">A blissful creation featuring premium chocolate, crunchy pearls, and sweet cherries on top for the modern palate.</p>
+                        <div class="pan-features">
+                            <span class="feature">Modern</span>
+                            <span class="feature">Indulgent</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="pan-item">
-                    <h4>Khajur Pan</h4>
-                    <img src="khajur_pan.webp" alt="Khajur Pan">
-                    <p>Premium dates stuffed pan with rich flavors</p>
+
+                <div class="pan-card">
+                    <div class="pan-image">
+                        <img src="khajur_pan_new.png" alt="Khajur Pan" class="pan-img">
+                        <div class="pan-overlay">
+                            <span class="pan-price">₹40</span>
+                        </div>
+                    </div>
+                    <div class="pan-content">
+                        <h3 class="pan-name">Khajur Pan</h3>
+                        <p class="pan-description">Premium dates stuffed pan with rich flavors, featuring Medjool dates, nuts, and aromatic spices for a wholesome treat.</p>
+                        <div class="pan-features">
+                            <span class="feature">Healthy</span>
+                            <span class="feature">Rich</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="store-image">
+    <!-- About Section -->
+    <section id="about" class="about">
         <div class="container">
-            <img src="store.webp" alt="Hyderabad Pan Center Storefront" class="store-img">
-        </div>
-    </section>
-
-    <section id="contact">
-        <div class="container">
-            <h3>Visit Us</h3>
-            <div class="contact-info">
-                <div class="contact-item">
-                    <h4>Contact Numbers:</h4>
-                    <p>Moinuddin: 9849114175</p>
-                    <p>Mohd. Rafi: 9849931118</p>
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">Our Heritage</h2>
+                    <p class="about-description">
+                        At Hyderabad Pan Center, we are custodians of a rich culinary tradition, dedicated to preserving and elevating the authentic pan experience. For generations, the art of crafting the perfect pan has been passed down through our family, each recipe a testament to time-honored techniques and an unwavering commitment to quality.
+                    </p>
+                    <p class="about-description">
+                        We meticulously select the finest betel leaves and source our ingredients from trusted suppliers, ensuring a harmonious blend that tantalizes the palate and leaves a lasting impression. Our skilled artisans handcraft each pan with care and passion, transforming simple ingredients into edible masterpieces.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">25+</span>
+                            <span class="stat-label">Years of Excellence</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">5</span>
+                            <span class="stat-label">Signature Varieties</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">1000+</span>
+                            <span class="stat-label">Happy Customers</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="contact-item">
-                    <h4>Location:</h4>
-                    <p>KGN Complex,</p>
-                    <p>Opp. to Govinda Reddy Petrol Bunk,</p>
-                    <p>Tower Clock, Anantapur - 515001,</p>
-                    <p>Andhra Pradesh</p>
-                    <a href="#" class="button">Get Directions</a>
-                </div>
-                <div class="contact-item">
-                    <h4>Business Hours:</h4>
-                    <p>Everyday: 9:00 AM - 10:00 PM</p>
+                <div class="about-image">
+                    <img src="storefront_impressive.png" alt="Hyderabad Pan Center Store" class="store-image">
                 </div>
             </div>
         </div>
     </section>
 
-    <footer>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
         <div class="container">
-            <p>&copy; 2025 Hyderabad Pan Center. All rights reserved.</p>
+            <div class="section-header">
+                <h2 class="section-title">Visit Us</h2>
+                <p class="section-subtitle">Experience the authentic taste at our store</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">📞</div>
+                    <h3 class="contact-title">Contact Numbers</h3>
+                    <div class="contact-details">
+                        <p><strong>Moinuddin:</strong> <a href="tel:9849114175">9849114175</a></p>
+                        <p><strong>Mohd. Rafi:</strong> <a href="tel:9849931118">9849931118</a></p>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">📍</div>
+                    <h3 class="contact-title">Location</h3>
+                    <div class="contact-details">
+                        <p>KGN Complex,<br>
+                        Opp. to Govinda Reddy Petrol Bunk,<br>
+                        Tower Clock, Anantapur - 515001,<br>
+                        Andhra Pradesh</p>
+                        <a href="https://maps.google.com" class="directions-btn" target="_blank">Get Directions</a>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">🕒</div>
+                    <h3 class="contact-title">Business Hours</h3>
+                    <div class="contact-details">
+                        <p><strong>Everyday:</strong><br>9:00 AM - 10:00 PM</p>
+                        <p class="hours-note">Open all days of the week</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="logo_impressive.png" alt="Hyderabad Pan Center" class="footer-logo-img">
+                    <p class="footer-tagline">Authentic Pan Experience</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#varieties">Our Pans</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Visit Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Info</h4>
+                    <p>📞 9849114175 / 9849931118</p>
+                    <p>📍 Tower Clock, Anantapur</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Hyderabad Pan Center. All rights reserved. | Crafted with ❤️ for authentic pan lovers</p>
+            </div>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
 
