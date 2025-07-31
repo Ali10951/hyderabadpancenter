@@ -136,28 +136,34 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     height: 100%;
     background: linear-gradient(135deg, rgba(0, 95, 96, 0.8), rgba(128, 0, 0, 0.6));
-    z-index: -1;
-}
-
-.hero-content {
-    z-index: 1;
-    max-width: 800px;
-    padding: 0 20px;
+    z-index:.nav-logo .logo-img {
+    height: 50px;
+    width: 80px; /* Adjust width for oval shape */
+    border-radius: 50% / 30%; /* Oval shape */
+    object-fit: contain; /* Ensure logo is fully visible */
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.7); /* Eye-catching glow */
+    transition: all 0.3s ease;
 }
 
 .hero-logo-img {
-    width: 120px;
-    height: 120px;
+    width: 150px; /* Adjust width for oval shape */
+    height: 100px;
     margin-bottom: 2rem;
-    border-radius: 0;
-    object-fit: cover;
+    border-radius: 50% / 30%; /* Oval shape */
+    object-fit: contain;
+    box-shadow: 0 0 25px rgba(255, 215, 0, 0.9); /* More pronounced glow */
+    transition: all 0.3s ease;
 }
 
-.hero-title {
-    font-size: 4rem;
-    font-weight: 700;
+.footer-logo-img {
+    width: 100px; /* Adjust width for oval shape */
+    height: 60px;
     margin-bottom: 1rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 50% / 30%; /* Oval shape */
+    object-fit: contain;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.5); /* Subtle glow */
+    transition: all 0.3s ease;
+}    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     color: #FFD700;
 }
 
